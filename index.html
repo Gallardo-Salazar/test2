@@ -63,8 +63,9 @@
 			$("#menu_clipping").next().show();
 			viewer.toggleSidebar();
 		});
+		viewer.setDescription(`</a><br><a href="https://www.copterlog.services"><img src="https://www.copterlog.services/wp-content/themes/copterlog/assets/images/cls_logo_bottom.png" width="200"></a> `);
 		
-		Potree.loadPointCloud("pointclouds/index/cloud.js", "index", e => {
+		Potree.loadPointCloud("pointclouds/index/cloud.js", "KRUSCHITZ", e => {
 			let pointcloud = e.pointcloud;
 			let material = pointcloud.material;
 			viewer.scene.addPointCloud(pointcloud);
